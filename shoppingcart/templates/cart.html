@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %} CART {% endblock %}
+
+{% block body %}
+
+CART
+<ul>
+	{% for item in cart.items.all %}
+	
+		<li> {{ item }} </li>
+
+	{% endfor %}
+</ul>
+
+{% endblock %}
